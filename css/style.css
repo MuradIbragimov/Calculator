@@ -64,6 +64,8 @@ body {
 }
 
 .calc_display p {
+  font-size: 40px;
+  overflow: hidden;
 }
 .calc_numpad {
   margin-top: 8%;

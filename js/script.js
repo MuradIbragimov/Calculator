@@ -18,7 +18,7 @@ btnCalc.forEach((button) => {
 });
 
 function buttonNumber(value) {
-  if (secondNumber.length >= 11) return displayError("не больше 11 цифр");
+  if (secondNumber.length >= 11) return;
   if (value === "." && secondNumber.includes(".")) return;
   secondNumber += value;
   updateDisplay();
