@@ -18,6 +18,7 @@ btnCalc.forEach((button) => {
 });
 
 function buttonNumber(value) {
+  if (secondNumber.length >= 11) return displayError("не больше 11 цифр");
   if (value === "." && secondNumber.includes(".")) return;
   secondNumber += value;
   updateDisplay();
@@ -62,6 +63,7 @@ function clearLastElement() {
 }
 
 function setOperator(value) {
+  if (operator && !secondNumber) return;
   if (operator && secondNumber) {
     equalsCalculation();
   }
